@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Steve Wisner
-image: /img/home-jumbotron.jpg
+image: /img/headshot.png
 heading: Great coffee with a conscience
 subheading: Front End Developer
 mainpitch:
