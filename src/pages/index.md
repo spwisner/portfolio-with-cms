@@ -1,16 +1,17 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Steve Wisner
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Front End Developer
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: About
+  description: >-
+    In 2014, I taught myself how to code and this became a hobby. Three year
+    later, I decided to take a risk and made my hobby a career. I resigned from
+    my job and attended a 3-month web development immersive program. Currently,
+    I’m employed as a frontend software engineer at Business.com where I build
+    web applications in React.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -68,3 +69,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
