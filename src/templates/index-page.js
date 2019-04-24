@@ -15,7 +15,6 @@ export const IndexPageTemplate = ({
   contact,
   skills,
   description,
-  intro,
 }) => (
   <div>
     <div
@@ -112,7 +111,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <Features gridItems={intro.blurbs} />
+                <Features gridItems={skills.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -147,7 +146,7 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   about: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
+  skills: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
 }
@@ -164,7 +163,6 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         about={frontmatter.about}
         description={frontmatter.description}
-        intro={frontmatter.intro}
         contact={frontmatter.contact}
         skills={frontmatter.skills}
       />
@@ -204,12 +202,10 @@ export const pageQuery = graphql`
           title
           location
         }
+        description
         skills {
           title
           subtitle
-        }
-        description
-        intro {
           blurbs {
             image {
               childImageSharp {
@@ -220,8 +216,6 @@ export const pageQuery = graphql`
             }
             text
           }
-          heading
-          description
         }
       }
     }
