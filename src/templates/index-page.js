@@ -85,9 +85,6 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title">{contact.title}</h1>
                   </div>
-                  <div className="tile">
-                    <p>{contact.location}</p>
-                  </div>
                   <Contact />
                 </div>
               </div>
