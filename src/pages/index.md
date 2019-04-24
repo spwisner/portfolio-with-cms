@@ -36,6 +36,8 @@ skills:
       text: ReactJS
     - image: /img/redux-1-.png
       text: Redux
+    - image: /img/electron.png
+      text: Electron
   subtitle: Languages & Technologies
   title: Skills
 ---
