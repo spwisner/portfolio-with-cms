@@ -1,20 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Contact from '../components/Contact'
 
 export const IndexPageTemplate = ({
-  image,
   title,
-  heading,
   subheading,
+  image,
   about,
   contact,
   skills,
-  description,
 }) => (
   <div>
     <div
@@ -90,6 +88,7 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <p>{contact.location}</p>
                   </div>
+                  <Contact />
                 </div>
               </div>
             </div>
@@ -112,13 +111,6 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <Features gridItems={skills.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
@@ -140,12 +132,10 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
   subheading: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   about: PropTypes.object,
-  description: PropTypes.string,
   skills: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -157,12 +147,10 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        image={frontmatter.image}
         about={frontmatter.about}
-        description={frontmatter.description}
         contact={frontmatter.contact}
         skills={frontmatter.skills}
       />
@@ -185,6 +173,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        subheading
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -192,8 +181,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
         about {
           title
           description
@@ -202,7 +189,6 @@ export const pageQuery = graphql`
           title
           location
         }
-        description
         skills {
           title
           subtitle
