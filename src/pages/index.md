@@ -25,6 +25,18 @@ skills:
       text: Gatsby
     - image: /img/jest.png
       text: Jest
+    - image: /img/mongodb.png
+      text: MongoDb
+    - image: /img/mongoose.png
+      text: Mongoose
+    - image: /img/netlify.png
+      text: Netlify
+    - image: /img/node.png
+      text: Node
+    - image: /img/react.png
+      text: ReactJS
+    - image: /img/redux-1-.png
+      text: Redux
   subtitle: Languages & Technologies
   title: Skills
 main:
