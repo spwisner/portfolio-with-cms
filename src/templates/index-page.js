@@ -11,7 +11,9 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
-  mainpitch,
+  about,
+  contact,
+  skills,
   description,
   intro,
 }) => (
@@ -68,24 +70,48 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
+            <div className="column is-5 is-offset-1">
+              <div className="content">
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">{about.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <p>{about.description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="column is-5 is-offset-1">
+              <div className="content">
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">{contact.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <p>{contact.location}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h1 className="title">{skills.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h3>{skills.subtitle}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -119,7 +145,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
+  about: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -136,9 +162,11 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        about={frontmatter.about}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        contact={frontmatter.contact}
+        skills={frontmatter.skills}
       />
     </Layout>
   )
@@ -168,9 +196,17 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
+        about {
           title
           description
+        }
+        contact {
+          title
+          location
+        }
+        skills {
+          title
+          subtitle
         }
         description
         intro {

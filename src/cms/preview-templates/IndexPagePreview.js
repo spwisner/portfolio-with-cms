@@ -4,6 +4,7 @@ import { IndexPageTemplate } from '../../templates/index-page'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
+	console.log("TCL: IndexPagePreview -> data", data)
   
   if (data) {
     return (
@@ -14,7 +15,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         subheading={data.subheading}
         description={data.description}
         intro={data.intro || { blurbs: [] }}
-        mainpitch={data.mainpitch || {}}
+        about={data.about || {}}
+        contact={data.contact || {}}
+        skills={data.skills || {}}
       />
     )
   } else {

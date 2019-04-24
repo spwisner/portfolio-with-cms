@@ -4,7 +4,7 @@ title: Steve Wisner
 image: /img/headshot.png
 heading: Great coffee with a conscience
 subheading: Front End Developer
-mainpitch:
+about:
   title: About
   description: >-
     In 2014, I taught myself how to code and this became a hobby. Three year
@@ -12,6 +12,12 @@ mainpitch:
     my job and attended a 3-month web development immersive program. Currently,
     I’m employed as a frontend software engineer at Business.com where I build
     web applications in React.
+contact:
+  title: Contact
+  location: Boston, MA
+skills:
+  title: Skills
+  subtitle: Languages & Technologies
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
