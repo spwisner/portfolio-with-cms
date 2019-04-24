@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Steve Wisner
 subheading: Front End Developer
-image: /img/img_3290-2.jpg
+image: /img/img_32903.jpeg
 about:
   description: >-
     In 2014, I taught myself how to code and this became a hobby. Three year
