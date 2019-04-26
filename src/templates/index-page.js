@@ -16,16 +16,15 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-image margin-top-0"
+      className="full-width-image margin-top-0 profile-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
       }}
     >
       <div
+        className="profile-text-container"
         style={{
           display: 'flex',
           height: '150px',
@@ -36,11 +35,11 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-text-centered"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(19.6, 24.3, 16.1) 0.5rem 0px 0px, rgb(19.6, 24.3, 16.1) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(19.6, 24.3, 16.1)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -49,11 +48,11 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-weight-bold has-text-centered is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(19.6, 24.3, 16.1) 0.5rem 0px 0px, rgb(19.6, 24.3, 16.1) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(19.6, 24.3, 16.1)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -114,7 +113,7 @@ export const IndexPageTemplate = ({
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
+                    <Link className="btn" to="/projects">
                       All Projects
                     </Link>
                   </div>
