@@ -1078,7 +1078,7 @@ window.netlifyIdentity = _netlifyIdentityWidget.default;
 
 var addLoginListener = function addLoginListener() {
   return _netlifyIdentityWidget.default.on("login", function () {
-    document.location.href = "/portfolio-with-cms" + "/" + "admin" + "/";
+    document.location.href = "" + "/" + "admin" + "/";
   });
 };
 
@@ -20012,7 +20012,7 @@ exports.parsePath = _parsePath.parsePath;
 
 /*global __PATH_PREFIX__ */
 function withPrefix(path) {
-  return normalizePath("/portfolio-with-cms" + "/" + path);
+  return normalizePath("" + "/" + path);
 }
 
 function normalizePath(path) {
@@ -22310,12 +22310,12 @@ var fetchPageResourceMap = function fetchPageResourceMap() {
 };
 
 var createJsonURL = function createJsonURL(jsonName) {
-  return "/portfolio-with-cms" + "/static/d/" + jsonName + ".json";
+  return "" + "/static/d/" + jsonName + ".json";
 };
 
 var createComponentUrls = function createComponentUrls(componentChunkName) {
   return window.___chunkMapping[componentChunkName].map(function (chunk) {
-    return "/portfolio-with-cms" + chunk;
+    return "" + chunk;
   });
 };
 
@@ -22458,7 +22458,7 @@ var prefetchCompleted = {};
 var disableCorePrefetching = false;
 var queue = {
   addPagesArray: function addPagesArray(newPages) {
-    findPage = Object(_find_page__WEBPACK_IMPORTED_MODULE_9__["default"])(newPages, "/portfolio-with-cms");
+    findPage = Object(_find_page__WEBPACK_IMPORTED_MODULE_9__["default"])(newPages, "");
   },
   addDevRequires: function addDevRequires(devRequires) {
     syncRequires = devRequires;
@@ -25217,7 +25217,7 @@ exports.onInitialClientRender = function (_, _ref) {
       netlifyIdentityWidget.on("init", function (user) {
         if (!user) {
           netlifyIdentityWidget.on("login", function () {
-            document.location.href = "/portfolio-with-cms" + "/" + publicPath + "/";
+            document.location.href = "" + "/" + publicPath + "/";
           });
         }
       });
