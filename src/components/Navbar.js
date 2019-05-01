@@ -8,7 +8,7 @@ const logoText = `<SW>`
 export default function NavBar() {
   const [active, setActive] = useState(false)
   const [navBarActiveClass, setNavBarActiveClass] = useState("")
-  const [width, setWidth] = useState(window.innerHeight)
+  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
   
   useEffect(() => {
     const handleResize = () => {

@@ -1,10 +1,10 @@
 var proxy = require("http-proxy-middleware")
 
 module.exports = {
+  pathPrefix: `/portfolio-with-cms`,
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'Steve Wisner',
+		description: `Portfolio website for Steve Wisner, creator of Property Data Generator.`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -67,6 +67,30 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+		{
+			// this awesomeness will read the UA-string and if it needs any of these polyfills it will send them down
+			resolve: `gatsby-plugin-polyfill-io`,
+			options: {
+				features: [
+					`default`,
+					`CustomEvent`,
+					`Object.assign`,
+					`WeakMap`,
+					`WeakSet`,
+					`Map`,
+					`Set`,
+				],
+				flags: [
+					'gated',
+				],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: "UA-114760466-1",
+			},
+		},
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
