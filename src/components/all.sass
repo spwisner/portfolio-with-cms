@@ -89,6 +89,9 @@ $black: #2b2523
 .nav-logo 
   text-align: center
   color: white
+  @media screen and (max-width: 768) 
+    font-size: 24px
+  
 .navbar-brand .navbar-item
   display: flex
   justify-content: center
@@ -151,13 +154,12 @@ $menu-label-color: $white-ter
 
 .profile-image
   background-position: 25% 100%
-  height: 500px
+  height: 100vh
   width: 100%
 
   @media screen and (min-width: 450px)
     background-attachment: fixed
     background-position: 27% 100%
-    height: 700px
     width: 100vw
 
   @media screen and (min-width: 769px)
@@ -166,8 +168,13 @@ $menu-label-color: $white-ter
 
   @media screen and (min-width: 1088px)
     background-position: 50% 100%
-    height: 850px
 
+  @media screen and (min-width: 1350px)
+    background-position: 65% 100%
+
+  &.static-profile-image 
+    background-attachment: initial !important
+    height: 100vh
 
 .profile-text-container
   visibility: hidden
@@ -185,6 +192,7 @@ $menu-label-color: $white-ter
 .navbar-item.navbar-option
   @media screen and (min-width: 1088px)
     color: white !important
+    font-size: 18px !important
 
   &:hover
     @media screen and (min-width: 1088px)
@@ -208,5 +216,16 @@ $menu-label-color: $white-ter
   padding: 1rem !important
   width: 90% !important
   text-align: center !important
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.feature-container
+  width: 180px
+
+  @media screen and (min-width: 1088px)
+    width: 200px
 
 @import "~bulma"

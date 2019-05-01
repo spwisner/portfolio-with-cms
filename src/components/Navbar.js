@@ -1,93 +1,85 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import logo from "../img/logo.svg";
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: ""
-    };
-  }
+const logoText = `<SW>`
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active"
-            })
-          : this.setState({
-              navBarActiveClass: ""
-            });
-      }
-    );
+export default function NavBar() {
+  const [active, setActive] = useState(false)
+  const [navBarActiveClass, setNavBarActiveClass] = useState("")
+  const [width, setWidth] = useState(window.innerHeight)
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth)
+    }
+    
+    window.addEventListener('resize', handleResize)
+    return () => { window.removeEventListener('resize', handleResize) }
+  }, [])
+  
+  const toggleHamburger = () => {
+
+    setActive(!active)
+
+    const newClass = !active ? "is-active" : ""
+    setNavBarActiveClass(newClass)
   };
 
-  render() {
-    const logo = `<SW>`
-    return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <span className="nav-logo">{logo}</span>
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
+  return (
+    <nav
+      className="navbar is-transparent"
+      role="navigation"
+      aria-label="main-navigation"
+    >
+      <div className="container">
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item" title="Logo">
+            <span className="nav-logo">{width >= 1088 ? logoText : 'Steve Wisner'}</span>
+          </Link>
+          {/* Hamburger menu */}
           <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-burger burger ${navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => toggleHamburger()}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item navbar-option" to="/">
-                Home
-              </Link>
-              <Link className="navbar-item navbar-option" to="/projects">
-                Projects
-              </Link>
-              <Link className="navbar-item navbar-option" to="/contact">
-                Contact
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/spwisner"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
+            <span />
+            <span />
+            <span />
           </div>
         </div>
-      </nav>
-    );
-  }
-};
+        <div
+          id="navMenu"
+          className={`navbar-menu ${navBarActiveClass}`}
+        >
+          <div className="navbar-start has-text-centered">
+            <Link className="navbar-item navbar-option" to="/">
+              Home
+            </Link>
+            <Link className="navbar-item navbar-option" to="/projects">
+              Projects
+            </Link>
+            <Link className="navbar-item navbar-option" to="/contact">
+              Contact
+            </Link>
+          </div>
+          <div className="navbar-end has-text-centered">
+            <a
+              className="navbar-item"
+              href="https://github.com/spwisner"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon">
+                <img src={github} alt="Github" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
 
-export default Navbar;
+// export default Navbar;

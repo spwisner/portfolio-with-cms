@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
@@ -6,18 +6,32 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Contact from '../components/Contact'
 
-export const IndexPageTemplate = ({
+export function IndexPageTemplate ({
   title,
   subheading,
   image,
   about,
   contact,
   skills,
-}) => (
+}){
+
+  const [height, setHeight] = useState(window.innerHeight)
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setHeight(window.innerHeight)
+    }
+    
+    window.addEventListener('resize', handleResize)
+    return () => { window.removeEventListener('resize', handleResize) }
+  }, [])
+  
+  return (
   <div>
     <div
-      className="full-width-image margin-top-0 profile-image"
+      className={`full-width-image margin-top-0 profile-image ${height < 500 ? 'static-profile-image' : ''}`}
       style={{
+        maxWidth: '100%',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
@@ -125,7 +139,8 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+  )
+}
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,

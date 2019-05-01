@@ -9,8 +9,8 @@ const FeatureGrid = ({ gridItems }) => (
         <section className="skill-container">
           <div className="skill-image">
             <div
+              className='feature-container'
               style={{
-                width: '240px',
                 display: 'inline-block',
               }}
             >
