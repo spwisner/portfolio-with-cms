@@ -1,7 +1,6 @@
 var proxy = require("http-proxy-middleware")
 
 module.exports = {
-  pathPrefix: `/portfolio-with-cms`,
   siteMetadata: {
     title: 'Steve Wisner',
 		description: `Portfolio website for Steve Wisner, creator of Property Data Generator.`,
