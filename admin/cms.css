@@ -74,6 +74,16 @@
   @media screen and (max-width: 768) {
     .nav-logo {
       font-size: 24px; } }
+  .nav-logo.desktop {
+    display: none !important; }
+    @media screen and (min-width: 1088px) {
+      .nav-logo.desktop {
+        display: block !important; } }
+  .nav-logo.mobile {
+    display: block !important; }
+    @media screen and (min-width: 1088px) {
+      .nav-logo.mobile {
+        display: none !important; } }
 
 .navbar-brand .navbar-item {
   display: flex;
