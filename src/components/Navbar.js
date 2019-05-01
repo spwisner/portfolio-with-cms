@@ -8,16 +8,6 @@ const logoText = `<SW>`
 export default function NavBar() {
   const [active, setActive] = useState(false)
   const [navBarActiveClass, setNavBarActiveClass] = useState("")
-  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
-  
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth)
-    }
-    
-    window.addEventListener('resize', handleResize)
-    return () => { window.removeEventListener('resize', handleResize) }
-  }, [])
   
   const toggleHamburger = () => {
 
@@ -36,7 +26,8 @@ export default function NavBar() {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <span className="nav-logo">{width >= 1088 ? logoText : 'Steve Wisner'}</span>
+            <span className="nav-logo mobile">Steve Wisner</span>
+            <span className="nav-logo desktop">{logoText}</span>
           </Link>
           {/* Hamburger menu */}
           <div
