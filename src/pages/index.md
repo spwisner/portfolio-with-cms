@@ -5,11 +5,11 @@ subheading: Front End Developer
 image: /img/img_32903.jpeg
 about:
   description: >-
-    In 2014, I taught myself how to code and this became a hobby. Three year
-    later, I decided to take a risk and made my hobby a career. I resigned from
-    my job and attended a 3-month web development immersive program. Currently,
-    I’m employed as a frontend software engineer at Business.com where I build
-    web applications in React.
+    In 2014, I taught myself how to code as a hobby. Three year later, I decided
+    to take a risk to pursue a career as a web developer. I resigned from my job
+    and attended a 3-month web development immersive program. Currently, I’m
+    employed as a frontend software engineer at Business.com where I build web
+    applications in React.
   title: About
 contact:
   location: 'Boston, MA'
