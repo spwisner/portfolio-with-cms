@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/img/apple-touch-icon.png"
+          href="/img/favorite-icon.png"
         />
         <link
           rel="icon"
@@ -34,7 +34,7 @@ const TemplateWrapper = ({ children }) => {
 
         <link
           rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
+          href="/img/favorite-icon.png"
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
