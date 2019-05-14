@@ -16,6 +16,8 @@ contact:
   title: Contact
 skills:
   blurbs:
+    - image: /img/aws-logo-icon-png-transparent-background.png
+      text: Amazon Web Services
     - image: /img/express.png
       text: Express
     - image: /img/flux.png
