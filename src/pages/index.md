@@ -30,8 +30,6 @@ skills:
       text: MongoDb
     - image: /img/mongoose.png
       text: Mongoose
-    - image: /img/netlify.png
-      text: Netlify
     - image: /img/node.png
       text: Node
     - image: /img/react.png
