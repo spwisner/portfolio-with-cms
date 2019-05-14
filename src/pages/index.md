@@ -20,8 +20,6 @@ skills:
       text: Amazon Web Services
     - image: /img/express.png
       text: Express
-    - image: /img/flux.png
-      text: Flux
     - image: /img/gatsby-1-.png
       text: Gatsby
     - image: /img/jest.png
