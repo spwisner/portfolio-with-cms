@@ -5,11 +5,11 @@ subheading: Front End Developer
 image: /img/img_32903.jpeg
 about:
   description: >-
-    In 2014, I taught myself how to code as a hobby. Three year later, I decided
-    to take a risk to pursue a career as a web developer. I resigned from my job
-    and attended a 3-month web development immersive program. Currently, I’m
-    employed as a frontend software engineer at WebPT where I build web
-    applications in React.
+    In 2014, I taught myself how to code as a hobby. Three years later, I
+    decided to take a risk to pursue a career as a web developer. I resigned
+    from my job and attended a 3-month web development immersive program.
+    Currently, I’m employed at WebPT where I am a lead software engineer for the
+    company's new tasking application.
   title: About
 contact:
   location: 'Boston, MA'
@@ -20,12 +20,16 @@ skills:
       text: Amazon Web Services
     - image: /img/apollo.svg
       text: Apollo
+    - image: /img/cypress.png
+      text: Cypress
     - image: /img/graphql_logo.png
       text: GraphQL
     - image: /img/javascript-2752148-2284965.png
       text: JavaScript
     - image: /img/jest.png
       text: Jest
+    - image: /img/nextjs-logo.png
+      text: Next.js
     - image: /img/node.png
       text: Node
     - image: >-
@@ -37,8 +41,12 @@ skills:
       text: ReactJS
     - image: /img/sql.jpeg
       text: SQL
+    - image: /img/styled-components.png
+      text: styled-components
     - image: /img/typescript_logo_2020.svg.png
       text: TypeScript
+    - image: /img/webdriverio.png
+      text: WebdriverIO
   subtitle: Current Stack
   title: Skills
 ---
