@@ -16,27 +16,25 @@ contact:
   title: Contact
 skills:
   blurbs:
-    - image: /img/aws-logo-icon-png-transparent-background.png
-      text: Amazon Web Services
+    - image: /img/typescript_logo_2020.svg.png
+      text: TypeScript
+    - image: /img/javascript-2752148-2284965.png
+      text: JavaScript
     - image: /img/express.png
       text: Express
-    - image: /img/gatsby-1-.png
-      text: Gatsby
     - image: /img/jest.png
       text: Jest
-    - image: /img/mongodb.png
-      text: MongoDb
-    - image: /img/mongoose.png
-      text: Mongoose
     - image: /img/node.png
       text: Node
     - image: /img/react.png
       text: ReactJS
-    - image: /img/redux-1-.png
-      text: Redux
     - image: /img/electron.png
       text: Electron
-  subtitle: Languages & Technologies
+    - image: /img/gatsby-1-.png
+      text: Gatsby
+    - image: /img/aws-logo-icon-png-transparent-background.png
+      text: Amazon Web Services
+  subtitle: Current Stack
   title: Skills
 ---
 
