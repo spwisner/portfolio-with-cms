@@ -28,8 +28,15 @@ skills:
       text: Jest
     - image: /img/node.png
       text: Node
+    - image: >-
+        /img/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail.png
+      text: PostgreSQL
+    - image: /img/prismahd.png
+      text: Prisma
     - image: /img/react.png
       text: ReactJS
+    - image: /img/sql.jpeg
+      text: SQL
     - image: /img/typescript_logo_2020.svg.png
       text: TypeScript
   subtitle: Current Stack
