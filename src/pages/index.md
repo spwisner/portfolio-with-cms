@@ -32,8 +32,7 @@ skills:
       text: Next.js
     - image: /img/node.png
       text: Node
-    - image: >-
-        /img/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail.png
+    - image: /img/postgres.png
       text: PostgreSQL
     - image: /img/prismahd.png
       text: Prisma
