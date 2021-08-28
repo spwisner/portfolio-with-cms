@@ -16,6 +16,8 @@ contact:
   title: Contact
 skills:
   blurbs:
+    - image: /img/apollo.svg
+      text: Apollo
     - image: /img/typescript_logo_2020.svg.png
       text: TypeScript
     - image: /img/javascript-2752148-2284965.png
