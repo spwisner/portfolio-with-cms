@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Steve Wisner
-subheading: Front End Developer
+subheading: Software Engineer
 image: /img/img_32903.jpeg
 about:
   description: >-
