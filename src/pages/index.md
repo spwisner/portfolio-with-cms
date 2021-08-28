@@ -18,7 +18,7 @@ skills:
   blurbs:
     - image: /img/aws-logo-icon-png-transparent-background.png
       text: Amazon Web Services
-    - image: /img/apollo.svg
+    - image: /img/apollo.png
       text: Apollo
     - image: /img/cypress.png
       text: Cypress
@@ -38,7 +38,7 @@ skills:
       text: Prisma
     - image: /img/react.png
       text: ReactJS
-    - image: /img/sql.jpeg
+    - image: /img/sql.png
       text: SQL
     - image: /img/styled-components.png
       text: styled-components
