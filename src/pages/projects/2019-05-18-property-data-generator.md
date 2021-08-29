@@ -24,7 +24,7 @@ The greatest strength of PDG was its speed and universal compatibility. When tes
 
 ## Demo
 
-<iframe width="100%" src="https://www.youtube.com/embed/FlHVLXJCKJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/FlHVLXJCKJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## **Application Statistics (3 month period):**
 
