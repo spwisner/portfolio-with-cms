@@ -1,6 +1,6 @@
 ---
 templateKey: projects-post
-title: Web Scraper Project
+title: Web Scraper
 date: 2021-08-03T23:05:10.443Z
 description: >-
   The web scraper project consists of two web applications that scrape financial
@@ -14,6 +14,7 @@ tags:
   - Express
   - Jest
   - Cypress
+  - Docker
 ---
 ## Server Scraper
 
@@ -21,7 +22,7 @@ The server scraper collects data from financial websites that are rendered on th
 
 **Technologies Used:**
 
-Node.js, TypeScript, Cheerio, Express, Jest
+Node.js, TypeScript, Cheerio, Express, Jest, Docker
 
 ## Client Scraper
 
