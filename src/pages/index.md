@@ -46,6 +46,8 @@ skills:
       text: TypeScript
     - image: /img/webdriverio.png
       text: WebdriverIO
+    - image: /img/gatsby-1-.png
+      text: Gatsby
   subtitle: Current Stack
   title: Skills
 ---
