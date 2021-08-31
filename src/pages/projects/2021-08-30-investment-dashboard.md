@@ -1,7 +1,7 @@
 ---
 templateKey: projects-post
 title: Investment Dashboard
-date: 2021-08-30T23:46:39.242Z
+date: 2021-08-08T23:46:39.242Z
 description: (In Progress)
 tags:
   - Next.js
