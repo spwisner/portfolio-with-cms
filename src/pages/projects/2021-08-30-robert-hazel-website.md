@@ -12,6 +12,8 @@ tags:
 
 Website: [www.robertwhazel.com](www.robertwhazel.com)
 
+The website contains Robert's resume, interviews, and scripts.  Using the Netlify CMS, Robert submitted chapters of his book "The Great Cancer Adventure", which documents his experience being diagnosed and treated for cancer.
+
 **Technologies Used**
 
 Gatsby, React, Netlify CMS
