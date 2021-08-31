@@ -22,6 +22,8 @@ skills:
       text: Apollo
     - image: /img/cypress.png
       text: Cypress
+    - image: /img/gatsby-1-.png
+      text: Gatsby
     - image: /img/graphql_logo.png
       text: GraphQL
     - image: /img/javascript-2752148-2284965.png
@@ -31,7 +33,7 @@ skills:
     - image: /img/nextjs-logo.png
       text: Next.js
     - image: /img/node.png
-      text: Node
+      text: Node.js
     - image: /img/postgres.png
       text: PostgreSQL
     - image: /img/prismahd.png
@@ -46,8 +48,6 @@ skills:
       text: TypeScript
     - image: /img/webdriverio.png
       text: WebdriverIO
-    - image: /img/gatsby-1-.png
-      text: Gatsby
   subtitle: Current Stack
   title: Skills
 ---
