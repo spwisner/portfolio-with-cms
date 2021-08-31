@@ -1,7 +1,7 @@
 ---
 templateKey: projects-post
 title: Web Scraper
-date: 2021-08-03T23:05:10.443Z
+date: 2021-06-08T23:05:10.443Z
 description: >-
   The web scraper project consists of two web applications that scrape financial
   data from public websites for personal use.  Both applications return data
