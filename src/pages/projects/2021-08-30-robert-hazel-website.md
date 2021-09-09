@@ -10,7 +10,7 @@ tags:
 ---
 ![robertwhazel.com screenshot](/img/screen-shot-2021-08-30-at-8.04.08-pm.png "robertwhazel.com")
 
-Website: [www.robertwhazel.com](www.robertwhazel.com)
+Website: [www.robertwhazel.com](https://www.robertwhazel.com/)
 
 The website contains Robert's resume, interviews, and scripts.  Using the Netlify CMS, Robert submitted chapters of his book "The Great Cancer Adventure", which documents his experience being diagnosed and treated for cancer.
 
