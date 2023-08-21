@@ -3,6 +3,9 @@
   "description": "Portfolio website for Steve Wisner, creator of Property Data Generator.",
   "version": "1.0.0",
   "author": "Steve Wisner",
+  "engines": {
+    "node": "10"
+  },
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.1.34",
