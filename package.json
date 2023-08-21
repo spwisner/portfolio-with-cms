@@ -5,8 +5,8 @@
   "author": "Steve Wisner",
   "engines": {
     "node": "10",
-    "npm": "6.14.12",
-    "yarn": "1.22.19"
+    "yarn": "1.9.4",
+    "npm": "6.14.12"
   },
   "dependencies": {
     "bulma": "^0.7.0",
