@@ -12,16 +12,34 @@ about:
     the company's new tasking application.
   title: About
 contact:
-  location: 'Boston, MA'
+  location: 'Glastonbury, CT'
   title: Contact
 skills:
   blurbs:
-    - image: /img/awslogoiconpngtransparentbackground.png
-      text: Amazon Web Services
+    - image: /img/aws_api_gateway_logo.png
+      text: AWS API Gateway
+    - image: /img/dynamodb_logo.png
+      text: AWS DynamoDB
+    - image: /img/aws_iam_logo.png
+      text: AWS IAM
+    - image: /img/aws_lambda_logo.png
+      text: AWS Lambda
+    - image: /img/aws_rds_logo.png
+      text: AWS RDS
+    - image: /img/aws_s3_logo.png
+      text: AWS S3
+    - image: /img/aws_sns_logo.png
+      text: AWS SNS
+    - image: /img/aws_sqs_logo.png
+      text: AWS SQS
     - image: /img/apollo.png
       text: Apollo
     - image: /img/cypress.png
       text: Cypress
+    - image: /img/docker_logo.png
+      text: Docker
+    - image: /img/express_logo.png
+      text: Express 
     - image: /img/gatsby1.png
       text: Gatsby
     - image: /img/graphql_logo.png
@@ -30,7 +48,7 @@ skills:
       text: JavaScript
     - image: /img/jest.png
       text: Jest
-    - image: /img/nextjs-logo.png
+    - image: /img/nextjs_logo.png
       text: Next.js
     - image: /img/node.png
       text: Node.js
@@ -40,6 +58,8 @@ skills:
       text: Prisma
     - image: /img/react.png
       text: ReactJS
+    - image: /img/redis_logo.png
+      text: Redis
     - image: /img/sql.png
       text: SQL
     - image: /img/styled_components_logo.png
