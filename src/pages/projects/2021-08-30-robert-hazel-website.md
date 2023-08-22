@@ -8,7 +8,7 @@ tags:
   - Netlify CMS
   - React
 ---
-![robertwhazel.com screenshot](/img/roberthazelwebsite.png.png "robertwhazel.com")
+![robertwhazel.com screenshot](/img/roberthazelwebsite.png "robertwhazel.com")
 
 Website: [www.robertwhazel.com](https://www.robertwhazel.com/)
 
