@@ -16,17 +16,17 @@ contact:
   title: Contact
 skills:
   blurbs:
-    - image: /img/aws-logo-icon-png-transparent-background.png
+    - image: /img/awslogoiconpngtransparentbackground.png
       text: Amazon Web Services
     - image: /img/apollo.png
       text: Apollo
     - image: /img/cypress.png
       text: Cypress
-    - image: /img/gatsby-1-.png
+    - image: /img/gatsby1.png
       text: Gatsby
     - image: /img/graphql_logo.png
       text: GraphQL
-    - image: /img/javascript-2752148-2284965.png
+    - image: /img/javascriptlogo.png
       text: JavaScript
     - image: /img/jest.png
       text: Jest
@@ -42,9 +42,9 @@ skills:
       text: ReactJS
     - image: /img/sql.png
       text: SQL
-    - image: /img/styled-components.png
+    - image: /img/styled_components_logo.png
       text: styled-components
-    - image: /img/typescript_logo_2020.svg.png
+    - image: /img/typescript_logo_2020.png
       text: TypeScript
     - image: /img/webdriverio.png
       text: WebdriverIO

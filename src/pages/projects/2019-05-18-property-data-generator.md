@@ -16,7 +16,7 @@ tags:
 ---
 Due to increasing costs related to the project, the desktop application **is no longer available for download.**
 
-![Property data generator screenshot](/img/app-screenshot.png)
+![Property data generator screenshot](/img/pdgappscreenshot.png)
 
 ## **Project Benefits**:
 
